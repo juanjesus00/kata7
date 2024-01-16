@@ -1,2 +1,10 @@
-package software.ulpgc.kata7;public class App {
+package software.ulpgc.kata7;
+import org.json.JSONObject;
+public class App {
+    public static void main(String[] args) {
+        String myString = "{\"name\" : \"Mary\"}";
+        JSONObject job = new JSONObject(myString);
+
+        System.out.println("the name is: " + job.get("name"));
+    }
 }
